@@ -1,0 +1,20 @@
+li{
+    display: inline;
+}
+
+ul{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.activities_container{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+}
+.description{
+    width: 65%;
+}
+
+.home{
+    margin: auto;
+}
