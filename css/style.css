@@ -29,13 +29,15 @@ ul{
     justify-content: center;
 }
 
-/*need to change nav links for mobile views .... also need to add alt text */
+/*need to add alt text + change nav links for mobile view bc it wants it different */
 
 .gallery img{
     width: 600px;
     height: 400px;
     margin: 10px;
 }
+
+/*need to fix h1 and h2 for gallery in other views*/
 
 /*resources.html css below*/
 
