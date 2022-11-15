@@ -1,0 +1,85 @@
+/*mobile view*/
+li{
+    display: inline;
+}
+
+ul{
+    display: flex; 
+    justify-content: space-around;
+}
+
+.activities_container{
+    display: grid; 
+    grid-template-columns: auto auto auto;
+}
+.description{
+    width: 65%;
+}
+
+.home{
+    margin: auto;
+}
+
+/*gallery.html css below*/
+
+/*mobile view*/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*need to add alt text + change nav links for mobile view bc it wants it different */
+
+.gallery img{
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+}
+
+/*need to fix h1 and h2 for gallery in other views*/
+
+/*resources.html css below*/
+
+.head h1{
+    text-align: center;
+    margin: 60px;
+}
+.resources{
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 5px solid blue;
+}
+
+.general{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: 5px solid yellow;
+    margin: 50px;
+    padding-left: 30px;
+
+}
+
+.general a{
+    color: black;
+}
+
+.general a:hover{
+    color: blue;
+}
+
+.majors{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: 5px solid yellow;
+    margin: 50px;
+    padding-left: 30px;
+}
+
+.majors a{
+    color: black;
+}
+
+.majors a:hover{
+    color: blue;
+}
