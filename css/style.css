@@ -1,4 +1,23 @@
 /*mobile view*/
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #070359;
+}
+
+body{ 
+    margin-top: 55px;
+}
+
+footer{
+   background-color: #070359; 
+}
+
+/*how do i turn this white*/
+.foot{
+    color: white; 
+}
+
+
 li{
     display: inline;
 }
@@ -6,6 +25,21 @@ li{
 ul{
     display: flex; 
     justify-content: space-around;
+}
+
+nav{ 
+    overflow: hidden;
+    background-color: #070359;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
 }
 
 .activities_container{
@@ -83,3 +117,8 @@ ul{
 .majors a:hover{
     color: blue;
 }
+
+
+
+
+
