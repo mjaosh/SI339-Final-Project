@@ -1,4 +1,5 @@
 /*mobile view*/
+
 *{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #070359;
@@ -9,14 +10,13 @@ body{
 }
 
 footer{
-   background-color: #070359; 
+   background-color: #070359;
 }
 
 /*how do i turn this white*/
 .foot{
     color: white; 
 }
-
 
 li{
     display: inline;
@@ -54,68 +54,337 @@ a{
     margin: auto;
 }
 
-/*gallery.html css below*/
 
-/*mobile view*/
+
+/*resources.html*/
+.head{
+    background-color: white;
+}
+
+.head h1{
+    color: #070359;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.resources{
+    display: grid;
+    grid-template-columns: auto;
+    border: 0px solid ;
+}
+
+/*general resources*/
+.general{
+    border: 5px solid #d9d8d7;
+    background-color: #d9d8d7;
+    margin: 50px;
+    padding-left: 30px;
+}
+
+.general:hover{
+    border:5px solid #070359;
+}
+.general h2{
+    text-align: center;
+}
+
+.general h3{
+    color: #070359;
+}
+
+.general p{
+    color: #070359;
+}
+
+.general a{
+    color: #070359;
+}
+
+.general a:hover{
+    color: #070359;
+    text-decoration: underline;
+}
+
+
+
+/*major resources*/
+.majors{
+    border: 5px solid #d9d8d7;
+    background-color: #d9d8d7;
+    margin: 50px;
+    padding-left: 30px;
+}
+
+.majors:hover{
+    border:5px solid #070359;
+}
+
+.majors h2{
+    text-align: center;
+}
+
+.majors h3{
+    color: #070359;
+}
+
+.majors p{
+    color: #070359;
+}
+
+.majors a{
+    color: #070359;
+}
+
+.majors a:hover{
+    color: #070359;
+    text-decoration: underline;
+}
+
+
+
+
+/*gallery.html css */
+
+.gallery h1{
+    text-align: center;
+}
+
+.gallery h2{
+    display: none;
+}
+
 .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
 }
-
-/*need to add alt text + change nav links for mobile view bc it wants it different */
 
 .gallery img{
-    width: 600px;
-    height: 400px;
-    margin: 10px;
+    width: 100%;
+    height: 100%;
 }
 
-/*need to fix h1 and h2 for gallery in other views*/
 
-/*resources.html css below*/
 
-.head h1{
-    text-align: center;
-    margin: 60px;
+/*tablet view*/
+@media screen and (min-width: 900px){
+
+     /*resources.html*/
+     .head h1{
+        text-align: center;
+        margin: 60px;
+    }
+    .resources{
+        display: grid;
+        grid-template-columns: auto;
+        border: 5px solid blue;
+    }
+    
+    .general{
+        border: 5px solid yellow;
+        margin: 50px;
+        padding-left: 30px;
+    
+    }
+    
+    .general a{
+        color: black;
+    }
+    
+    .general a:hover{
+        color: blue;
+    }
+    
+    .majors{
+        border: 5px solid yellow;
+        margin: 50px;
+        padding-left: 30px;
+    }
+    
+    .majors a{
+        color: black;
+    }
+    
+    .majors a:hover{
+        color: blue;
+    }
+
+    /*gallery.html*/
+
+    .gallery h1{
+        text-align: center;
+    }
+    
+    .gallery h2{
+        display: flex;
+        text-align: center;
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .gallery img{
+        width: 300;
+        height: 400px;
+        margin: 10px;
+    }
 }
-.resources{
-    display: grid;
-    grid-template-columns: auto auto;
-    border: 5px solid blue;
-}
 
-.general{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    border: 5px solid yellow;
-    margin: 50px;
-    padding-left: 30px;
+/*large screen view*/
+@media screen and (min-width: 1200px){
 
-}
+    /*resources.html css*/
+    .head{
+        background-color: white;
+    }
 
-.general a{
-    color: black;
-}
+    .head h1{
+        color: #070359;;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
 
-.general a:hover{
-    color: blue;
-}
+    .resources{
+        display: grid;
+        border: 0px solid ;
+    }
+    
+    /*general resources*/
+    .general{
+        width: auto;
+        border: 5px solid #d9d8d7;
+        background-color: #d9d8d7;
+        margin: 50px;
+        padding-left: 30px;
+    }
 
-.majors{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    border: 5px solid yellow;
-    margin: 50px;
-    padding-left: 30px;
-}
+    .general h2{
+        text-align: center;
+    }
 
-.majors a{
-    color: black;
-}
+    .general h3{
+        color: #070359;
+    }
 
-.majors a:hover{
-    color: blue;
+
+    .general p{
+        color: #070359;
+    }
+    
+    .general a{
+        color: #070359;
+    }
+    
+    .general a:hover{
+        color: #070359;
+        text-decoration: underline;
+    }
+
+    .d1{
+        font-size:30px ;
+        text-align: left;
+    }
+
+    .d2{
+        font-size:30px ;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .d3{
+        font-size:30px ;
+        text-align: left;
+    }
+
+    .d4{
+        font-size:30px ;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .a1{
+        font-size:30px ;
+        text-align: left;
+    }
+
+    .a2{
+        font-size:30px ;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .a3{
+        font-size:30px;
+        text-align: left;
+    }
+
+    .a4{
+        font-size:30px ;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    /*major resources*/
+    .majors{
+        display: inline-block;
+        border: 5px solid #d9d8d7;
+        background-color: #d9d8d7;
+        margin: 50px;
+        padding-left: 30px;
+    }
+
+    .majors h2{
+        text-align: center;
+    }
+
+    .majors h3{
+        color: #070359;
+    }
+
+    .majors p{
+        color: #070359;
+    }
+    
+    .majors a{
+        color: #070359;
+    }
+    
+    .majors a:hover{
+        color: #070359;
+        text-decoration: underline;
+    }
+
+
+
+    /*gallery.html css*/
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+    .gallery img{
+        width: 600px;
+        height: 400px;
+        margin: 10px;
+    }
+
+    .gallery h1{
+        text-align: center;
+    }
+    
+    .gallery h2{
+        display: flex;
+        text-align: center;
+    }
+
+
 }
 
 
