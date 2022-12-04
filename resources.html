@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGuide Home</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
+            <a class = "skip" href="#skip">Skip to Main Content</a>
             <ul>
-                <a class = "skip" href="#skip">Skip to Main Content</a>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <div id = "myDIV"> 
+                    <button class= "btn" ><a href= index.html > Home</a></button>
+                    <button class= "btn" ><a href= activities.html > Activities</a></button>
+                    <button class= "btn active" ><a href= resources.html > Resources</a></button>
+                    <button class= "btn" ><a href= gallery.html > Photo Gallery</a></button>
+                </div>
             </ul>
         </nav>
     </header> 

@@ -32,14 +32,14 @@ footer{
 .foot{
     color: white; 
 }
-li{
+ #myDIV ul{
     display: block;
 }
 
-ul{
+#myDIV ul{
     display: block; 
     justify-content: space-around;
-}
+} 
 
 nav{ 
     overflow: hidden;
@@ -48,6 +48,29 @@ nav{
     top: 0; 
     width: 100%;
 }
+
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: #070359;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #myDIV{
+    display: grid;
+    justify-items: left;
+  }
+  
+  .active, .btn:hover {
+    margin-top: 5px;
+    background-color: #070359;
+    border: 2px solid #FFCB05;
+    border-radius: 20px;
+  }
+
+
 
 a{
     text-decoration: none;
@@ -63,17 +86,6 @@ a{
     width: 65%;
 }
 
-.home{
-    margin: auto;
-}
-
-.activities{
-    background-color:#FFCB05;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 0.05%;
-    padding-top: 60px;
-}
 .activitiestext{
     font-size: 1.15rem;
     text-align: center;
@@ -208,20 +220,25 @@ img{
 
 /*home.html*/
 .home h1{
-    padding-top: 100px;
+    padding-top: 115px;
     text-align: center;
-    font-size: 40px;
-    
+    font-size: 2rem;    
 }
 
 .home img{
-    width: 450px;
-    padding-left: 15px;
+    width: 80%;
+    padding-left: 9%;
+
 }
 
 .home h2{
     text-align: center;
 }
+
+.home{
+    margin: auto;
+}
+
 
 
 
@@ -232,7 +249,7 @@ img{
     text-align: center;
     background-color:#FFCB05;
     margin: auto;
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .resources{
@@ -242,12 +259,15 @@ img{
     
 }
 
+.information{
+    text-align: center;
+}
+
     /*general resources*/
 .general{
     border: 5px solid #d9d8d7;
     background-color: #d9d8d7;
     margin: 50px;
-    padding-left: 30px;
 }
 
 .general:hover{
@@ -267,6 +287,7 @@ img{
 
 .general a{
     color: #070359;
+    font-size: 125%;
 }
 
 .general a:hover{
@@ -280,7 +301,6 @@ img{
     border: 5px solid #d9d8d7;
     background-color: #d9d8d7;
     margin: 50px;
-    padding-left: 30px;
 }
 
 .majors:hover{
@@ -301,6 +321,7 @@ img{
 
 .majors a{
     color: #070359;
+    font-size: 125%;
 }
 
 .majors a:hover{
@@ -316,20 +337,21 @@ img{
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 0px;
+    justify-content: center;
     
 }
-
 
 .gallery h1{
+    color: #070359;
     text-align: center;
     background-color:#FFCB05;
-    margin: auto; 
     width: 100%;
-    padding-top: 70px;
-    
+    margin:auto;
+    padding-top: 100px;
+
 }
+
 
 .gallery h2{
     display: none;
@@ -348,29 +370,11 @@ img{
 
 
     /*nav bar*/
-    li{
-        display: flex;
-        justify-content: right;
-        padding-right: 30px;
-    }
-    
-    ul{
-        display: block; 
-    }
-    
-    nav{ 
-        overflow: hidden;
-        background-color: #070359;
-        position: fixed; 
-        top: 0; 
-        width: 100%;
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 110%;
-    }
+    #myDIV{
+        display: grid;
+        justify-items: right;
+        padding-right: 20px;
+      }
 
      /*resources.html*/
 
@@ -476,6 +480,7 @@ img{
     }
 
     .gallery h1{
+        padding-top: 85px;
         text-align: center;
     }
     
@@ -516,23 +521,25 @@ img{
         grid-template-columns: auto auto;
     }
 
-
-    .home h1{
-        padding-top: 70px;
-        text-align: center;
-        font-size: 70px;
-    }
-    
-    .home img{
-        padding-left: 140px;
-        width: 600px;
-    }
 }
 
 /*large screen view*/
 @media screen and (min-width: 1200px){
 
+
+     /*nav bar*/
+    button{
+        display: inline;
+        justify-content: space-around;
+    }
+
+    #myDIV{
+        display: flex; 
+        justify-content: space-around;
+      }
+
     /*resources.html css*/
+
     .head{
         background-color: white;
     }
@@ -626,16 +633,19 @@ img{
         display: flex;
         flex-wrap: wrap;
         gap: 0px;
+        margin: auto;
+        justify-content: center;
     }
 
     .gallery img{
-        width: 600px;
-        height: 400px;
+        width: 530px;
+        height: 330px;
         margin: 10px;
         border: 7px solid #FFCB05;
     }
 
     .gallery h1{
+        padding-top: 45px;
         text-align: center;
     }
     
@@ -663,6 +673,7 @@ img{
         display:flex; 
         justify-content: center;
     }
+
     
     .arb{
 
@@ -1057,39 +1068,11 @@ img{
 
     .home h1{
         padding-top: 30px;
-        text-align: center;
-        font-size: 70px;
-    }
-    
-    .home img{
-        padding-left: 350px;
-        width: 50%;
-        margin:auto;
+       
     }
 
-    /*nav bar*/
-    li{
-        display: inline;
-    }
-    
-    ul{
-        display: flex; 
-        justify-content: space-around;
-    }
-    
-    nav{ 
-        overflow: hidden;
-        background-color: #070359;
-        position: fixed; 
-        top: 0; 
-        width: 100%;
-    }
-    
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 110%;
-    }
+
+   
 
    
     

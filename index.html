@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGuide Home</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -12,18 +13,19 @@
         <nav>
             <a class = "skip" href="#skip">Skip to Main Content</a>
             <ul>
-                
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <div id = "myDIV"> 
+                    <button class= "btn active" ><a href= index.html > Home</a></button>
+                    <button class= "btn" ><a href= activities.html > Activities</a></button>
+                    <button class= "btn" ><a href= resources.html > Resources</a></button>
+                    <button class= "btn" ><a href= gallery.html > Photo Gallery</a></button>
+                </div>
             </ul>
         </nav>
     </header> 
     <main>
         <div class = "home" id = 'skip'>
             <h1> Welcome to the  </h1>
-            <img src = "images/umich.jpg" width = "600" alt = "">
+            <img src = "images/umich.jpg" width = "600" alt = "" >
             <h2> Here you will find a comprehensive guide of the ins and outs of Ann Arbor. </h2>
             <img src = "images/landscape.jpg" width = "600" alt = "">
     
@@ -33,6 +35,20 @@
             <p class = "foot">University of Michigan School of Information <br/>	
               Mari Jaoshvili, Casey Sestanovich - Web Design 2022</p>	
         </footer>	
+
     </main>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+        </script>
+
 </body>
 </html>

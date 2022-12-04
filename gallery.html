@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGuide Home</title>
     <link href="dist/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
+            <a class = "skip" href="#skip">Skip to Main Content</a>
             <ul>
-                <a class = "skip" href="#skip">Skip to Main Content</a>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <div id = "myDIV"> 
+                    <button class= "btn" ><a href= index.html > Home</a></button>
+                    <button class= "btn" ><a href= activities.html > Activities</a></button>
+                    <button class= "btn" ><a href= resources.html > Resources</a></button>
+                    <button class= "btn active" ><a href= gallery.html > Photo Gallery</a></button>
+                </div>
 
             </ul>
         </nav>
     </header> 
     <main>
-        <div class = "gallery" id="skip">
+        <div class = "gallery"  id="skip">
             <h1> Exploring the UM Campus - A Virtual Tour </h1>
             <h2> Photo guide of the University of Michigan's outstanding campus</h2>
             <a href = "images/students.jpg" target ='_blank' data-lightbox = 'students'>
                 <img src = "images/students.jpg"  alt = "Photo of students walking across the Unviersity of Michigan campus">
             </a>
             <a href = "images/lawquadfall.jpg" target ='_blank' data-lightbox = 'law'>
-                <img src = "images/lawquadfall.jpg"  alt = "Photo of the front of the Law Quad at the University of Michigan">
+                <img src = "images/lawquadfall.jpg"  alt = "Photo of the outside of the Law Quad at the University of Michigan">
             </a>
             <a href = "images/northcamp.jpg" target ='_blank' data-lightbox = 'law'>
                 <img src = "images/northcamp.jpg" alt = "Photo of North Campus at the University of Michigan">
@@ -46,8 +49,8 @@
             <a href = "images/randstu.jpg" target ='_blank' data-lightbox = 'law'>
                 <img src = "images/randstu.jpg"  alt = "Four University of Michigan students smiling together">
             </a>
-            <a href = "images/socialwork.jpg" target ='_blank' data-lightbox = 'law'>
-                <img src = "images/socialwork.jpg"  alt = "Photo of the School of Social Work Building at the University of Michigan">
+            <a href = "images/lawq.webp" target ='_blank' data-lightbox = 'law'>
+                <img src = "images/lawq.webp"  alt = "Photo of the inside of the University of Michigan's Law Quad">
             </a> 
             <a href = "images/flag.jpg" target ='_blank' data-lightbox = 'law'>
                 <img src = "images/flag.jpg"  alt = "Photo in the Big House at the University of Michigan where a man is waving the U of M flag on the stadium field">

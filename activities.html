@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MGuide Home</title>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -13,17 +14,19 @@
             <a class = "skip" href="#skip">Skip to Main Content</a>
             <ul>
                 
-                <li><a href = "index.html">Home</a></li>
-                <li><a href="activities.html">Activities</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <div id = "myDIV"> 
+                    <button class= "btn" ><a href= index.html > Home</a></button>
+                    <button class= "btn active" ><a href= activities.html > Activities</a></button>
+                    <button class= "btn" ><a href= resources.html > Resources</a></button>
+                    <button class= "btn" ><a href= gallery.html > Photo Gallery</a></button>
+                </div>
 
             </ul>
         </nav>
     </header> 
     <main>
         
-        <div class = "activities"> 
+        <div class = "head"> 
             <h1> Activities</h1>
         </div>
             <h2 class = activitiestext> Scroll through our favorite sights, restaurants, and shopping locations to ensure you make the most out of your UMICH experience! </p>
@@ -32,28 +35,28 @@
             <div class = "sights" id = 'skip' tabindex="0">
                 <div class = "arb">
                     <h2> Nichols Arboretum </h2>
-                    <img src = "images/arb.jpg" width = "400" alt = "" id = 'arbimg'>
+                    <img src = "images/arb.jpg" width = "400" alt = "Photo of the Nichols Arboretum during the Spring filled with flowers" id = 'arbimg'>
                     <p class = "description"> Destress with a walk in the Arb and explore the dozens of native and exotic trees and shrubs! Take a look at the river, have a picnic in the fields, or go on a run on the trail - the arb has got it all! </p>
                 </div>
                 <div class = "law">
                     <h2 class = "lawheader"> Law Quad</h3> 
-                    <img src = "images/law.jpg" width = "400" alt = "" id = 'lawimg'>
+                    <img src = "images/law.jpg" width = "400" alt = "Photo of the front of the main building of the law quad lit up by the inside" id = 'lawimg'>
                     <p class = rightdescription> The law quad is a university campus square surrounded by amazing neo-Gothic buildings, with lawns & paved paths. The law quad is by the best study spot on campus on a nice day. Be sure to bring a blanket to lay out on and some snacks. </p>
                 </div> 
                 <div class = "UMMA" >
                     <h2 class = "ummaheader"> UMMA</h3>
-                    <img src = "images/UMMA.jpg" width = "325" alt = "" id = 'ummaimg'>
+                    <img src = "images/UMMA.jpg" width = "325" alt = "Photo of the red scultpture directly outside of the UMMA during the day" id = 'ummaimg'>
                     <p class = "description"> Check out the University of Michigan Museum of Art in Ann Arbor, which is one of the largest university art museums in the United States! It contains more than 150 years of history, with over 20,000 works of art. And admission is free! </p>
                 </div>
                 
                 <div class = "natural" >
                     <h2 class = "naturalheader"> Museum of Natural History</h3> 
-                    <img src = "images/natural.jpg" width = "300" alt = "" id = 'naturalimg'>
+                    <img src = "images/natural.jpg" width = "300" alt = "Photo of the inside of the Biological Sciences Building of prehistoric animal bones" id = 'naturalimg'>
                     <p class = "rightdescription"> The Museum of Natural History is located in one of UMICH's very own classrooms, the Biological Sciences Building. Check out the museums four major exhibits - The Hall of Evolution, The Michigan Wildlife Gallery, The Anthropology Displays, and The Geology Displays. </p>
                 </div>
                 <div class = "docks" >
                     <h2 class = "docksheader"> "The Docks"</h3>
-                    <img src = "images/docks.jpg" width = "300" alt = "" id = 'docksimg'>
+                    <img src = "images/docks.jpg" width = "300" alt = "Photo of the Docks at the University of Michigan with students relaxing and having fun on them" id = 'docksimg'>
                     <p class = "description"> Looking to cool down on a hot day? Visit Bandameer park and take a dip in the Huron River. It is the best place to relax, tan, and socialize with other UMICH students!</p>
                 </div>
             </div>
@@ -61,23 +64,23 @@
             <div class = "restaurants" tabindex="0">
                 <div class = "zingermans" >
                     <h2> Zingerman's</h2>
-                    <img src = "images/zingermans.jpg" width = "250" alt = "" id = "zingimg">
+                    <img src = "images/zingermans.jpg" width = "250" alt = "Close up of a turkey sandwich from the famous Michigan Zingerman's Delicatessen" id = "zingimg">
                     <p class = "description"> You must stop by at Zingerman's in Kerrytown for an Ann Arbor classic lunch. Grab yourself a reuban, or head on over to the attached grocery store for some pre-made meals. </p>
                 </div>
                 <div class = "jagged">
                     <h2 class = "jaggedheader"> Jagged Fork</h2> 
-                    <img src = "images/jagged.jpg" width = "250" alt = "" id = 'jaggedimg'>
+                    <img src = "images/jagged.jpg" width = "250" alt = "Close up of an assortment of brunch foods from the Jagged Fork including French Toast, Eggs, and a Sandwich" id = 'jaggedimg'>
                     <p class = "rightdescription"> Jagged Fork is the most popular breakfast destination in AA by far. Be sure to bring your parents to a delicious breakfast or brunch of clever pancakes, sandwiches, and salads.</p>
                 </div>
                 <div class = "savas">
                     <h2 class = savasheader> Savas</h2>
-                    <img src = "images/savas.jpg" width = "250" alt = "" id = 'savasimg'>
-                    <p class = "description"> Enjoy at elevated brunch or dinner at Savas. Not only are all their food locally sources, they're delicious too! Order the bistro salad and the corn risotto to finish off an amazing meal. </p>
+                    <img src = "images/savas.jpg" width = "250" alt = "Close up of the Sava's mac and cheese with different cocktails available" id = 'savasimg'>
+                    <p class = "description"> Enjoy an elevated brunch or dinner at Savas. Not only are all their food locally sources, they're delicious too! Order the bistro salad and the corn risotto to finish off an amazing meal. </p>
                 </div>
                 
                 <div class = "slurping" >
                     <h2 class = "slurpingheader"> Slurping Turtle</h2>
-                    <img src = "images/slurping.jpg" width = "300" alt = "" id = "slurpingimg">
+                    <img src = "images/slurping.jpg" width = "300" alt = "Close up of a bowl of ramen with the noodles, vegetables, and a medium boiled egg" id = "slurpingimg">
                     <p class = rightdescription> Enjoy a steaming hot bowl of ramen or a dragon roll at the best Japanese resturant in AA. They don't take reservations, so be prepared for a wait!</p>
                     </div>
                 </div>
@@ -86,22 +89,22 @@
             <div class = "shopping" tabindex="0">
                 <div class = "state" >
                     <h2> State Street</h2>
-                    <img src = "images/state.png" width = "300" alt = "" id = 'stateimg'>
+                    <img src = "images/state.png" width = "300" alt = "Photo of the State Street sign with the Michigan theater pictured behind it" id = 'stateimg'>
                     <p class = "description"> Pitaya, Verbena, Bivouac, MDen, Target - State Street has all the stores you need to upgrade your wardrobe for the new year.  </p>
                 </div>
                 <div class = "kerry" >
                     <h2 class = "kerryheader"> Kerry Town</h2>
-                    <img src = "images/kerry.jpg" width = "300" alt = "" id = "kerryimg">
+                    <img src = "images/kerry.jpg" width = "300" alt = "Photo of Kerry Town Brown Building that holds many different shops and eateries" id = "kerryimg">
                     <p class = "rightdescription"> Not only is Kerrytown known for its local shops and businesses, it also has a wonderful farmers market. From clothes to food, find yourself a special treat in Kerrytown.  </p>
                 </div>
                 <div class = "briarwood" >
                     <h2 class = "briarheader"> Briarwood Mall</h2>
-                    <img src = "images/briarwood.jpg" width = "300" alt = "" id = 'briarimg'>
+                    <img src = "images/briarwood.jpg" width = "300" alt = "Photo of individuals strolling through the main court of the Briarwood Mall" id = 'briarimg'>
                     <p class = "description"> Only a 10 minutes drive from Central Campus, Briarwood mall has all you need for your back-to-school shopping. From Macy's to Urban Outfitters, Briarwood is set to give you a brand new wardrobe for the school year.  </p>
                 </div>
                 <div class = "main">
                     <h2 class = "mainheader"> Main Street</h2>
-                    <img src = "images/main.jpg" width = "250" alt = "" id = 'mainimg'>
+                    <img src = "images/main.jpg" width = "250" alt = "Photo of Main Street during the Summer with individuals roaming the streets and eating at restaurants outside" id = 'mainimg'>
                     <p class = "rightdescription"> Cherry Republic. Footprints. Fleet Feet. Shinola. Warby Parker. The list of stores on Main Street goes on and on. </p>
                 </div> 
 
