@@ -42,6 +42,8 @@ footer{
 } 
 
 nav{ 
+    padding-top: 12px;
+    padding-bottom: 12px;
     overflow: hidden;
     background-color: #070359;
     position: fixed; 
@@ -55,7 +57,7 @@ nav{
     outline: none;
     background-color: #070359;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
   
   #myDIV{
@@ -87,8 +89,26 @@ a{
 }
 
 .activitiestext{
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     text-align: center;
+    padding-top: 15px;
+    
+}
+
+.activitiesheaders{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display:flex; 
+    justify-content: center;
+    font-weight:bold;
+    font-size: 1.75rem;
+}
+
+.home h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.25rem;
 }
 
 .sights{
@@ -106,11 +126,7 @@ a{
 
 }
 
-.activitiesheaders{
-    padding-top: 2%;
-    display:flex; 
-    justify-content: center;
-}
+
 
 img{
     width: 60%;
@@ -120,6 +136,31 @@ img{
     text-align: center;
     margin: auto;
 }
+
+.sights h2{
+    padding-top:10px;
+    font-weight: bold; 
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    
+}
+.restaurants h2{
+    padding-top:10px;
+    font-weight: bold; 
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.shopping h2{
+    padding-top:10px;
+    font-weight: bold; 
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+
+}
+
+
+
 .description{
     margin: auto;
     text-align: center;
@@ -189,6 +230,7 @@ img{
     display: grid; 
     overflow: scroll;
     grid-template-columns: auto;
+    margin-bottom: 5%;
 }
 
 .state{
@@ -222,12 +264,15 @@ img{
 .home h1{
     padding-top: 115px;
     text-align: center;
-    font-size: 2rem;    
+    font-size: 2.5rem;    
+    font-weight: bold;
 }
 
 .home img{
     width: 80%;
-    padding-left: 9%;
+    padding-left: 19%;
+
+
 
 }
 
@@ -245,11 +290,14 @@ img{
 /*resources.html*/
 
 .head h1{
+    font-size: 1.6rem;
+    font-weight: bold;
     color: #070359;
     text-align: center;
     background-color:#FFCB05;
     margin: auto;
     padding-top: 100px;
+    padding-bottom: 15px;
 }
 
 .resources{
@@ -275,14 +323,20 @@ img{
 }
 .general h2{
     text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .general h3{
     color: #070359;
+    font-weight: bold;
 }
 
 .general p{
     color: #070359;
+    padding-top: 8px;
+    padding-bottom: 15px;
 }
 
 .general a{
@@ -309,10 +363,16 @@ img{
 
 .majors h2{
     text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .majors h3{
     color: #070359;
+    font-weight: bold;
+    padding-top: 15px;
+    
 }
 
 .majors p{
@@ -322,6 +382,7 @@ img{
 .majors a{
     color: #070359;
     font-size: 125%;
+
 }
 
 .majors a:hover{
@@ -347,14 +408,17 @@ img{
     text-align: center;
     background-color:#FFCB05;
     width: 100%;
-    margin:auto;
-    padding-top: 100px;
+    font-weight: bold;
+    font-size: 1.5rem;   
+    padding-top:110px;
+    padding-bottom: 20px;
 
 }
 
 
 .gallery h2{
     display: none;
+    
    
 }
 
@@ -375,6 +439,7 @@ img{
         justify-items: right;
         padding-right: 20px;
       }
+    
 
      /*resources.html*/
 
@@ -385,7 +450,7 @@ img{
     .head h1{
         color: #070359;;
         text-align: center;
-        padding-top: 80px;
+        padding-top: 100px;
         padding-bottom: 10px;
     }
      
@@ -480,13 +545,17 @@ img{
     }
 
     .gallery h1{
-        padding-top: 85px;
+        padding-top: 100px;
         text-align: center;
     }
     
     .gallery h2{
         display: flex;
         text-align: center;
+        font-weight: bold;
+        font-size: 1.7rem;
+        padding-top: 13px;
+        padding-bottom: 13px;
     }
 
 
@@ -520,6 +589,10 @@ img{
         display: grid; 
         grid-template-columns: auto auto;
     }
+    .shopping img{
+        width: 300px;
+        height: 200px;
+    }
 
 }
 
@@ -547,7 +620,7 @@ img{
     .head h1{
         color: #070359;;
         text-align: center;
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 10px;
     }
 
@@ -645,7 +718,7 @@ img{
     }
 
     .gallery h1{
-        padding-top: 45px;
+        padding-top: 20px;
         text-align: center;
     }
     
@@ -667,11 +740,6 @@ img{
         overflow: scroll;
         display: grid; 
         grid-template-columns: auto auto auto auto;
-    }
-    .activitiesheaders{
-        padding-top: 2%;
-        display:flex; 
-        justify-content: center;
     }
 
     
