@@ -7,16 +7,17 @@
 }
 
 .skip{
-    background: white;
+    padding-bottom: 8px;
+    background: black;
     left: 0;
-    padding: 6px;
+    margin-left: 80%;
     position: absolute;
-    top: -40px;
+    top: -80px;
   }
   
   .skip:focus{
-    top:60px;
-    color: black;
+    top:80px;
+    color: white;
     text-decoration-style: solid;
     font-weight: bold;
   }
@@ -434,6 +435,15 @@ img{
 
 
     /*nav bar*/
+
+    .skip{
+        margin-left: 10px;
+        
+
+      }
+
+
+
     #myDIV{
         display: grid;
         justify-items: right;
