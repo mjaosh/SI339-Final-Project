@@ -53,7 +53,7 @@ nav{
 }
 
 
-.btn {
+.btn li{
     border: none;
     outline: none;
     background-color: #070359;
@@ -71,6 +71,7 @@ nav{
     background-color: #070359;
     border: 2px solid #FFCB05;
     border-radius: 20px;
+    padding: 5px;
   }
 
 
