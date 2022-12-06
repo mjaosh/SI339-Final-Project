@@ -12,8 +12,7 @@
     <header>
         <nav>
             <a class = "skip" href="#skip">Skip to Main Content</a>
-            
-                <ul id = "myDIV"> 
+                <ul id = "mydiv"> 
                     <li><a class= "btn active" href= index.html > Home</a></li>
                     <li><a href= activities.html > Activities</a></li>
                     <li><a href= resources.html > Resources</a></li>
@@ -39,7 +38,7 @@
     </main>
     <script>
         // Add active class to the current button (highlight it)
-        var header = document.getElementById("myDIV");
+        var header = document.getElementById("mydiv");
         var btns = header.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
           btns[i].addEventListener("click", function() {

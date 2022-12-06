@@ -16,7 +16,7 @@
   }
   
   .skip:focus{
-    top:80px;
+    top:0px;
     color: white;
     text-decoration-style: solid;
     font-weight: bold;
@@ -27,20 +27,14 @@ body{
 }
 
 footer{
+    margin-top: 10px;
    background-color: #070359;
 }
 
 .foot{
     color: white; 
 }
- #myDIV ul{
-    display: block;
-}
 
-#myDIV ul{
-    display: block; 
-    justify-content: space-around;
-} 
 
 nav{ 
     padding-top: 12px;
@@ -50,28 +44,17 @@ nav{
     position: fixed; 
     top: 0; 
     width: 100%;
+    padding-left: 10px;
 }
 
 
-.btn li{
-    border: none;
-    outline: none;
-    background-color: #070359;
-    cursor: pointer;
-    font-size: 1.15rem;
-  }
-  
-  #myDIV{
-    display: grid;
-    justify-items: left;
-  }
   
   .active, .btn:hover {
     margin-top: 5px;
     background-color: #070359;
     border: 2px solid #FFCB05;
     border-radius: 20px;
-    padding: 5px;
+    padding: 1.75px;
   }
 
 
@@ -79,13 +62,14 @@ nav{
 a{
     text-decoration: none;
     color: white;
-    font-size: 110%;
+    font-size: 115%;
 }
 
 .activities_container{
     display: grid; 
     grid-template-columns: auto auto auto;
 }
+
 .description{
     width: 65%;
 }
@@ -94,6 +78,8 @@ a{
     font-size: 1.25rem;
     text-align: center;
     padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
     
 }
 
@@ -113,7 +99,7 @@ a{
     font-size: 1.25rem;
 }
 
-.sights{
+.newsection{
     background-color: #d9d8d7;
     height: 425px;
     border: 3px solid #070359;
@@ -121,23 +107,22 @@ a{
     display: grid; 
     overflow: scroll;
     grid-template-columns: auto;
-}
-.activitiescontainer{
-    display: grid; 
-    grid-template-columns: auto auto auto;
-
+    margin-left: 1px;
+    margin-right: 1px;
 }
 
+.box h2{
+    font-weight: bold;
+    font-size: 1.15rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 img{
     width: 60%;
 }
-.arb{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
+
 
 .sights h2{
     padding-top:10px;
@@ -162,103 +147,17 @@ img{
 }
 
 
-
 .description{
     margin: auto;
     text-align: center;
 }
 
-.law{
+.box{
     width: 100%;
     text-align: center;
     margin: auto;
 }
 
-.UMMA{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.natural{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-.docks{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-
-}
-.restaurants{
-    background-color: #d9d8d7;
-    height: 425px;
-    border: 3px solid #070359;
-    border-radius: 20px;
-    display: grid; 
-    overflow: scroll;
-    grid-template-columns: auto;
-
-}
-
-.zingermans{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.jagged{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-.savas{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-.slurping{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.shopping{
-    background-color: #d9d8d7;
-    height: 425px;
-    border: 3px solid #070359;
-    border-radius: 20px;
-    display: grid; 
-    overflow: scroll;
-    grid-template-columns: auto;
-    margin-bottom: 5%;
-}
-
-.state{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.kerry{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.briarwood{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.main{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-
-}
 
 
 
@@ -434,18 +333,15 @@ img{
 /*tablet view*/
 @media screen and (min-width: 900px){
 
-
     /*nav bar*/
 
     .skip{
         margin-left: 10px;
-        
-
       }
 
 
 
-    #myDIV{
+    #mydiv{
         display: grid;
         justify-items: right;
         padding-right: 20px;
@@ -571,38 +467,14 @@ img{
 
 
     /*activities.html + index.html*/
-    .sights{
+    .newsection{
         display: grid; 
         grid-template-columns: auto auto;
     }
     
-    img{
-        width: 85%;
-    }
-    .restaurants{
-        display: grid; 
-        grid-template-columns: auto auto;
-    
-    }
-    
-    #savasimg{
-        width: 50%;
-    }
-    
-    #zingimg{
-        width: 60%;
-    }
-    #slurpingimg{
-        width:100%;
-    }
-    
-    .shopping{
-        display: grid; 
-        grid-template-columns: auto auto;
-    }
-    .shopping img{
-        width: 300px;
-        height: 200px;
+    .box img{
+        width: 350px;
+        height: 275px;
     }
 
 }
@@ -610,14 +482,13 @@ img{
 /*large screen view*/
 @media screen and (min-width: 1200px){
 
-
      /*nav bar*/
     button{
         display: inline;
         justify-content: space-around;
     }
 
-    #myDIV{
+    #mydiv{
         display: flex; 
         justify-content: space-around;
       }
@@ -743,419 +614,141 @@ img{
 
 
     /*activities.html */
-    .sights{
+    .newsection{
         background-color: white; 
         height: 425px;
         border: 3px solid #070359;
         border-radius: 20px;
         overflow: scroll;
+
         display: grid; 
         grid-template-columns: auto auto auto auto;
     }
 
     
-    .arb{
-
+    .box{
         padding-top: 17px;
+        margin-bottom: 23px;
         display: grid; 
         grid-template-columns: auto auto auto auto;
         border-radius: 20px;
         background-color:#d9d8d7; 
-    
-        grid-column-start: 1; 
-        grid-column-end: 4;
+
         padding-left: 3%;
-        padding-right: 6%;
+
     }
-    
-    #arbimg{
-        width:65%;
+
+
+    .box img{
+        width:350px;
+        height: 300px;
         grid-column-start: 1; 
         grid-column-end: 4;
         grid-row-start:2;
+
         padding-bottom: 5%;
     }
+
 
     .description{
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start:2;
+
         font-size: 1.25rem;
         padding-bottom: 10%;
+        padding-left: 23%;
         margin:auto;
     }
 
     
-    .law{  
-        margin-top: 2%;
-        display:grid;
-        grid-template-columns: auto auto auto auto;
+
+    #arb{
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
     
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
+    #law{  
         grid-row-start: 3;
         grid-column-start: 2; 
         grid-column-end: 5;
-       
-        padding-bottom: 3%;
     }
-    
-    .lawheader{
-        padding-right:38%;
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-    }
-    
-    #lawimg{
-        width:100%;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
-    }
-    
-    .rightdescription{
-        font-size: 1.25rem;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        padding-right: 5%;
-        padding-left: 5%;
-    
-    }
-    .UMMA{
-        margin-top: 2%;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
+
+    #umma{
         grid-column-start: 1; 
         grid-column-end: 4;
         grid-row-start:4;
-        padding-left: 3%;
-        padding-right: 6%;
-        padding-bottom: 2%;
     }
 
-    #ummaimg{
-        width:75%;
-        grid-column-start: 1; 
-        grid-column-end: 2;
-        grid-row-start:2;
-        padding-bottom: 10%;
-    }
-
-    .ummaheader{
-        padding-right:75%;
-    }
-
-    .natural{
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        margin-top: 2%;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
+    #natural{
         grid-row-start: 6;
         grid-column-start: 2; 
         grid-column-end: 5;
-        padding-bottom: 3%;
     }
 
-    #naturalimg{
-        grid-column-start: 4;
-        grid-row-start: 2;
-    
-    }
-    .naturalheader{
-        font-size: 1.2rem;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        padding-right: 20%;
-    }
-
-    .docks{
-        margin-top: 2%;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
+    #docks{
         grid-row-start: 8;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
         grid-column-start: 1; 
         grid-column-end: 4;
-        padding-left: 3%;
-        padding-right: 6%;
-        padding-bottom: 2%;
+
     }
-    
-    #docksimg{
-        width:45%;
+
+
+    #zing{
         grid-column-start: 1; 
         grid-column-end: 4;
-        grid-row-start: 2;
-        padding-bottom: 1%;
-    }
-
-    .docksheader{
-        grid-column-start: 1; 
-        grid-column-end:2;
-        grid-row-start: 1;
-    }
-
-    .restaurants{
-        background-color: white; 
-        height: 425px;
-        border: 3px solid #070359;
-        border-radius: 20px;
-        overflow: scroll;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-    }
-
-    .zingermans{
-
-        padding-top: 17px;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        padding-left: 3%;
-        padding-right: 6%;
-    }
-
-    #zingimg{
-        width:40%;
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        grid-row-start:2;
-        padding-bottom: 5%;
-    }
-
-
-    .jagged{  
-        margin-top: 2%;
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-    
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
-        grid-row-start: 2;
-        grid-column-start: 2; 
-        grid-column-end: 5;
-       
-        padding-bottom: 3%;
     }
     
-    .jaggedheader{
-        padding-right:30%;
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-    }
-    
-    #jaggedimg{
-        width:90%;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
-    }
-
-    .savas{
-        margin: 17px;
-
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
+    #jagged{  
         grid-row-start: 3;
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        padding-left: 3%;
-        padding-right: 6%;
-    }
-
-    #savasimg{
-        width:40%;
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        grid-row-start:2;
-        padding-bottom: 5%;
-    }
-
-    .slurping{  
-        margin-top: 2%;
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-    
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
-        grid-row-start: 4;
         grid-column-start: 2; 
         grid-column-end: 5;
-        padding-bottom: 3%;
-    }
-    
-    .slurpingheader{
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        padding-right: 40%;
-    }
-    
-    #slurpingimg{
-        width:85%;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
     }
 
-    .shopping{
-        background-color: white; 
-        height: 425px;
-        border: 3px solid #070359;
-        border-radius: 20px;
-        overflow: scroll;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-    }
-
-    .state{
-
-        padding-top: 17px;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
+    #savas{
         grid-column-start: 1; 
         grid-column-end: 4;
-        padding-left: 3%;
-        padding-right: 6%;
+        grid-row-start:4;
     }
 
-    #stateimg{
-        width:50%;
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        grid-row-start:2;
-        padding-bottom: 5%;
-    }
-
-    .kerry{  
-        margin-top: 2%;
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-    
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
-        grid-row-start: 2;
+    #slurp{
+        grid-row-start: 6;
         grid-column-start: 2; 
         grid-column-end: 5;
-       
-        padding-bottom: 3%;
-    }
-    
-    .kerryheader{
-        padding-right:38%;
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-    }
-    
-    #kerryimg{
-        width:100%;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
     }
 
-    .briarwood{
-        margin-top: 17px;
-        display: grid; 
-        grid-template-columns: auto auto auto auto;
-        border-radius: 20px;
-        background-color:#d9d8d7; 
+    #state{
+        grid-column-start: 1; 
+        grid-column-end: 4;
+    }
+    
+    #kerry{  
         grid-row-start: 3;
-
-        grid-column-start: 1; 
-        grid-column-end: 4;
-        padding-left: 3%;
-        padding-right: 6%;
-    }
-
-    #briarimg{
-        width:65%;
-        grid-column-start: 1; 
-        grid-column-end: 2;
-        grid-row-start:2;
-        padding-bottom: 5%;
-    }
-    .briarheader{
-        padding-right: 65%;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-    }
-
-
-    .main{  
-        margin-top: 2%;
-        display:grid;
-        grid-template-columns: auto auto auto auto;
-    
-        border-radius: 20px;
-        background-color:#d9d8d7; 
-    
-        grid-row-start: 4;
         grid-column-start: 2; 
         grid-column-end: 5;
-       
-        padding-bottom: 3%;
     }
-    
-    .mainheader{
-        padding-left:12%;
-        grid-column-start: 3;
+
+    #briar{
+        grid-column-start: 1; 
+        grid-column-end: 4;
+        grid-row-start:4;
+    }
+
+    #main{
+        grid-row-start: 6;
+        grid-column-start: 2; 
         grid-column-end: 5;
-        grid-row-start: 1;
     }
-    
-    #mainimg{
-        width:90%;
-        grid-column-start: 4;
-        grid-column-end: 5;
-        grid-row-start: 2;
-    }
-    
-    
-    
-    
+
+
 
     /*index.html*/
 
-    
 
     .home h1{
         padding-top: 30px;
        
     }
-
-
-   
-
-   
-    
-
 }
 
 

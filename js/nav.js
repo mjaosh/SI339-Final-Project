@@ -1,5 +1,5 @@
 // Get the container element
-var btnContainer = document.getElementById("myDIV");
+var btnContainer = document.getElementById("mydiv");
 
 // Get all buttons with class="btn" inside the container
 var btns = btnContainer.getElementsByClassName("btn");
